@@ -6,8 +6,187 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .box {
+            width: 1200px;
+            height: 1200px;
+            background: midnightblue;
+        }
+
+        .box_horizontal {
+            height: 200px;
+            background: yellow;
+            display: flex;
+            justify-content: space-between;
+            line-height: 200px;
+            align-items: center;
+        }
+
+        .box_hor_one {
+            height: 50px;
+            width: 200px;
+            background: chocolate;
+            margin-left: 20px;
+        }
+
+        .box_hor_two {
+            height: 50px;
+            width: 200px;
+            background: chocolate;
+            margin-right: 20px;
+        }
+
+        .box_vertical {
+            height: 1000px;
+            background: grey;
+            display: flex;
+        }
+
+        .box_vertical_one {
+            width: 200px;
+            background:cornflowerblue;
+            height: 1000px;
+        }
+
+        .box_vertical_two {
+            width: 1000px;
+            height: 1000px;
+            background: cornflowerblue;
+        }
+
+        .box_vertical_tree {
+            height: 200px;
+            background: red;
+        }
+
+        .four_horizontal {
+            height: 200px;
+            background: chocolate;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .f_r {
+            height: 100px;
+            width: 200px;
+            background: black;
+        }
+
+        .container {
+            height: 350px;
+            background: cornflowerblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+        }
+
+        .c_n {
+            height: 50px;
+            width: 150px;
+            background: grey;
+            margin-left: 25px;
+        }
+
+        .five_horizontal {
+            background: yellowgreen;
+            height: 500px;
+            width: 800px;
+            display: flex;
+        }
+
+        .box_five {
+            display: flex;
+        }
+
+        .box_five_one {
+            background: green;
+            height: 500px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .box_five_two {
+            background: blue;
+            height: 500px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .child_five, .child_five_two {
+            background: pink;
+            height: 70px;
+            width: 200px;
+            margin-left: 100px;
+        }
+
+        .box_six {
+            background: silver;
+            width: 200px;
+
+        }
+
+        .box_seven {
+            background: chocolate;
+            height: 100px;
+
+        }
+    </style>
 </head>
 <body>
-
+<div class="box">
+    <div class="box_horizontal">
+        <div class="box_hor_one"></div>
+        <div class="box_hor_two"></div>
+    </div>
+    <div class="box_vertical">
+        <div class="box_vertical_one">
+            <div class="container">
+                <div class="c_n"></div>
+                <div class="c_n"></div>
+                <div class="c_n"></div>
+                <div class="c_n"></div>
+                <div class="c_n"></div>
+                <div class="c_n"></div>
+            </div>
+        </div>
+        <div class="box_vertical_two">
+            <div class="box_vertical_tree"></div>
+            <div class="four_horizontal">
+                <div class="f_r"></div>
+                <div class="f_r"></div>
+                <div class="f_r"></div>
+                <div class="f_r"></div>
+            </div>
+            <div class="five_horizontal">
+                <div class="box_five">
+                    <div class="box_five_one">
+                        <div class="child_five"></div>
+                        <div class="child_five"></div>
+                        <div class="child_five"></div>
+                        <div class="child_five"></div>
+                        <div class="child_five"></div>
+                        <div class="child_five"></div>
+                    </div>
+                    <div class="box_five_two">
+                        <div class="child_five_two"></div>
+                        <div class="child_five_two"></div>
+                        <div class="child_five_two"></div>
+                        <div class="child_five_two"></div>
+                        <div class="child_five_two"></div>
+                        <div class="child_five_two"></div>
+                    </div>
+                    <div class="box_six"></div>
+                </div>
+            </div>
+            <div class="box_seven"></div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
