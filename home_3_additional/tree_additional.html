@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .father {
+            height: 400px;
+            width: 600px;
+            background: darkslategrey;
+            display: flex;
+        }
+
+        .father_two {
+            width: 200px;
+            height: 400px;
+            background: yellow;
+        }
+
+        .vertical_one {
+            width: 200px;
+            height: 80px;
+            background: grey;
+        }
+
+        .vertical_two {
+            width: 200px;
+            height: 320px;
+            background: orangered;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        .child_vertical_one, .child_vertical_two {
+            height: 50px;
+            width: 150px;
+            background: indianred;
+            margin-left: 20px;
+        }
+
+        .container_one {
+            width: 400px;
+            height: 400px;
+            background: green;
+        }
+
+        .child_one {
+            height: 50px;
+            background: red;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .box_one {
+            height: 30px;
+            width: 200px;
+            background: darkcyan;
+            margin-top: 5px;
+
+        }
+
+        .box_tree {
+            background: blue;
+            height: 200px;
+            width: 300px;
+            margin: 40px 40px;
+        }
+
+        .container_four {
+            height: 400px;
+            width: 600px;
+            background: red;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .child_four {
+            height: 150px;
+            width: 600px;
+            background: orangered;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .grand_son_four {
+            height: 100px;
+            width: 200px;
+            background: orange;
+            margin-top: 20px;
+        }
+
+        .container_five ,.container_six {
+            height: 400px;
+            width: 600px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            background: blue;
+        }
+        .container_six{
+            background: pink;
+        }
+        .child_container_five ,.child_container_six ,.child_container_seven{
+            height: 50px;
+            width: 500px;
+            background: darkslategrey;
+            margin-left: 40px;
+        }
+        .container_seven{
+            height: 100px;
+            width:600px;
+            background: green;
+        }
+    </style>
+
+</head>
+<body>
+<div class="father">
+    <div class="father_two">
+        <div class="vertical_one">
+            <div class="child_vertical_one"></div>
+        </div>
+        <div class="vertical_two">
+            <div class="child_vertical_two"></div>
+            <div class="child_vertical_two"></div>
+            <div class="child_vertical_two"></div>
+            <div class="child_vertical_two"></div>
+            <div class="child_vertical_two"></div>
+            <div class="child_vertical_two"></div>
+        </div>
+    </div>
+    <div class="container_one">
+        <div class="child_one">
+            <div class="box_one"></div>
+        </div>
+        <div class="box_tree"></div>
+        <div class="child_two"></div>
+    </div>
+</div>
+<div class="container_four">
+    <div class="child_four">
+        <div class="grand_son_four"></div>
+        <div class="grand_son_four"></div>
+    </div>
+    <div class="child_four">
+        <div class="grand_son_four"></div>
+        <div class="grand_son_four"></div>
+    </div>
+</div>
+<div class="container_five">
+    <div class="child_container_five"></div>
+    <div class="child_container_five"></div>
+    <div class="child_container_five"></div>
+    <div class="child_container_five"></div>
+    <div class="child_container_five"></div>
+</div>
+<div class="container_six">
+    <div class="child_container_six"></div>
+    <div class="child_container_six"></div>
+    <div class="child_container_six"></div>
+    <div class="child_container_six"></div>
+    <div class="child_container_six"></div>
+    <div class="child_container_six"></div>
+</div>
+<div class="container_seven">
+    <div class="child_container_seven"></div>
+</div>
+</body>
+</html>
