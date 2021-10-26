@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 1000px;
+            height: 1500px;
+            background: cornflowerblue;
+        }
+
+        .father_horizontal {
+            height: 1200px;
+            width: 1000px;
+            display: flex;
+
+        }
+
+        .two_horizontal {
+            height: 1200px;
+            width: 200px;
+        }
+
+        .father_box {
+            height: 1000px;
+            width: 800px;
+        }
+
+        .child_one_two_horizontal {
+            height: 100px;
+        }
+
+        .child_two_two_horizontal {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .grand_son_horizontal, .grand_son__horizontal {
+            height: 50px;
+            width: 150px;
+            margin-left: 15px;
+            background: black;
+        }
+
+        .grand_son__horizontal {
+            margin-top: 10px;
+
+        }
+
+        .container_one {
+            height: 100px;
+            background: rebeccapurple;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .child_one {
+            height: 50px;
+            width: 150px;
+            background: red;
+            margin-top: 10px;
+        }
+
+
+        .container_four {
+            height: 400px;
+            width: 800px;
+            background: red;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .child_four {
+            height: 150px;
+            width: 800px;
+            background: orangered;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .grand_son_four {
+            height: 100px;
+            width: 300px;
+            background: orange;
+            margin-top: 20px;
+        }
+
+        .container_five {
+            height: 500px;
+            width: 800px;
+            background: darkred;
+            display: flex;
+        }
+
+        .child_one_five, .child_two_five {
+            height: 500px;
+            width: 400px;
+            background: darkred;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .child_two_five {
+            background: yellowgreen;
+        }
+
+        .grand_son_five {
+            height: 100px;
+            width: 250px;
+            background: chartreuse;
+            margin-left: 50px;
+        }
+
+        .container_six {
+            height: 200px;
+            width: 800px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            background: blue;
+        }
+
+        .child_container_six, .child_container_seven {
+            height: 50px;
+            width: 500px;
+            background: darkslategrey;
+            margin-left: 70px;
+            justify-content: center;
+        }
+
+        .child_container_seven {
+            padding-top: -5px;
+        }
+
+        .container_seven {
+            height: 300px;
+            width: 800px;
+            background: chartreuse;
+            line-height: 300px;
+            vertical-align: middle;
+
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="father_horizontal">
+        <div class="two_horizontal">
+            <div class="child_one_two_horizontal">
+                <div class="grand_son__horizontal"></div>
+            </div>
+            <div class="child_two_two_horizontal">
+                <div class="grand_son_horizontal"></div>
+                <div class="grand_son_horizontal"></div>
+                <div class="grand_son_horizontal"></div>
+                <div class="grand_son_horizontal"></div>
+                <div class="grand_son_horizontal"></div>
+                <div class="grand_son_horizontal"></div>
+            </div>
+        </div>
+        <div class="father_box">
+            <div class="container_one">
+                <div class="child_one"></div>
+                <div class="child_one"></div>
+            </div>
+            <div class="container_four">
+                <div class="child_four">
+                    <div class="grand_son_four"></div>
+                    <div class="grand_son_four"></div>
+                </div>
+                <div class="child_four">
+                    <div class="grand_son_four"></div>
+                    <div class="grand_son_four"></div>
+                </div>
+            </div>
+            <div class="container_five">
+                <div class="child_one_five">
+                    <div class="grand_son_five"></div>
+                    <div class="grand_son_five"></div>
+                    <div class="grand_son_five"></div>
+                </div>
+                <div class="child_two_five">
+                    <div class="grand_son_five"></div>
+                    <div class="grand_son_five"></div>
+                    <div class="grand_son_five"></div>
+                </div>
+
+            </div>
+            <div class="container_six">
+                <div class="child_container_six"></div>
+                <div class="child_container_six"></div>
+                <div class="child_container_six"></div>
+            </div>
+            <div class="container_seven">
+                <div class="child_container_seven"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+</body>
+</html>
