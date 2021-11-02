@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap {
+            max-width: 1500px;
+            margin: auto;
+            padding: 30px;
+            max-height: 1500px;
+        }
+
+        .container_one {
+            height: 100px;
+            background: grey;
+            width: 1200px;
+            display: flex;
+        }
+
+        .left_one {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right {
+            width: 1000px;
+            height: 100px;
+        }
+
+        .right_one {
+            width: 1000px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            column-gap: 5px;
+
+        }
+
+        .right_two {
+            width: 1000px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            column-gap: 5px;
+            border-radius: 10px;
+        }
+
+        .child_right_one {
+            height: 20px;
+            width: 100px;
+            background: blueviolet;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .child_left_one {
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+            background: blueviolet;
+        }
+
+        .container_two {
+            height: 300px;
+            width: 1200px;
+            background: midnightblue;
+        }
+
+        .child_container_two {
+            width: 600px;
+            height: 50px;
+            margin-right: 20px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .grand_container_two {
+            background: blueviolet;
+            height: 20px;
+            width: 50px;
+            border-radius: 10px;
+            margin-right: 30px;
+        }
+
+        .left_two {
+            height: 100px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .child_two_cont_two {
+            height: 100px;
+            text-align: center;
+            color: blueviolet;
+            width: 600px;
+        }
+
+        .container_three {
+            height: 500px;
+            width: 1200px;
+            background: grey;
+            display: flex;
+        }
+
+        .child_three_one {
+            width: 600px;
+            background: blueviolet;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+
+        .grand_three {
+            width: 200px;
+            height: 100px;
+            background: blue;
+            border-radius: 20px;
+        }
+
+        .child_son_three {
+            width: 200px;
+            height: 50px;
+            background: blue;
+            display: flex;
+            column-gap: 5px;
+        }
+
+        .child_three_two {
+            width: 600px;
+            height: 500px;
+            background: red;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .grand_son_three {
+            height: 50px;
+            background: mediumvioletred;
+            width: 50px;
+            border-radius: 5px;
+        }
+
+        .grand_two_three {
+            width: 100px;
+            height: 80px;
+            border-radius: 20px;
+            background: blue;
+        }
+
+        .container_four {
+            width: 1200px;
+            height: 500px;
+            background: dimgrey;
+        }
+
+        .grand_four_one {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+        }
+
+        .grand__f {
+            height: 10px;
+            width: 50px;
+            background: blue;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+        .grand_son_four {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grand_four_two, .grand_four_three {
+            height: 200px;
+            width: 800px;
+            display: flex;
+
+        }
+
+        .gr_son_one, .gr_son_on {
+            height: 200px;
+            width: 520px;
+            background: darkred;
+        }
+
+        .gr_son_two, .gr_son_tw {
+            margin-left: 30px;
+            height: 200px;
+            width: 250px;
+            background: violet;
+        }
+
+        .gr_son_on {
+            margin-left: 0;
+        }
+
+        .gr_son_tw {
+            margin-right: 30px;
+            margin-left: 0;
+        }
+
+        .grand_four_three {
+            margin-top: 20px;
+        }
+
+        .container_five {
+            height: 50px;
+            width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: dimgrey;
+        }
+
+        .container_six {
+            width: 1200px;
+            height: 300px;
+            background: dimgrey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .child_six {
+            height: 300px;
+            width: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: blueviolet;
+
+        }
+
+        .grand_six {
+            height: 200px;
+            width: 200px;
+            background: red;
+            border-radius: 50%;
+        }
+
+        .container_seven {
+            background: midnightblue;
+            height: 300px;
+            width: 1200px;
+            display: flex;
+        }
+
+        .child_seven {
+            width: 300px;
+            background: forestgreen;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .child_hor_one, .child_hor_two {
+            width: 300px;
+            height: 150px;
+            background: darkred;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 5px;
+        }
+
+        .child_hor_two {
+            background: deepskyblue;
+        }
+
+        .grand_sev {
+            height: 50px;
+            width: 50px;
+            background: deeppink;
+        }
+
+        .gran_sev_two {
+            height: 10px;
+            width: 50px;
+            background: midnightblue;
+            border-radius: 10px;
+        }
+        .gr_sev_three{
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            height: 50px;
+        }
+        .gr_sev_four{
+            height: 10px;
+            width: 100px;
+            border-radius: 5px;
+            background: red;
+        }
+        .gr_sev_five{
+            height: 10px;
+            width: 80px;
+            border-radius: 5px;
+            background: red;
+            margin-right: 20px;
+        }
+        .gr_sev_six{
+            height: 10px;
+            width: 50px;
+            border-radius: 5px;
+            background: red;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="container_one">
+        <div class="left_one">
+            <div class="child_left_one"></div>
+        </div>
+        <div class="right">
+            <div class="right_one">
+                <div class="child_right_one"></div>
+                <div class="child_right_one"></div>
+            </div>
+            <div class="right_two">
+                <div class="child_right_one"></div>
+                <div class="child_right_one"></div>
+                <div class="child_right_one"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container_two">
+        <div class="child_container_two">
+            <div class="grand_container_two"></div>
+            <div class="child_right_one"></div>
+        </div>
+        <div class="child_two_cont_two">
+            <h1>Menu</h1>
+            <h2>Service</h2>
+            <h3>Settings</h3>
+            <div class="left_two">
+                <div class="child_left_one"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container_three">
+        <div class="child_three_one">
+            <div class="grand_three"></div>
+            <div class="grand_three"></div>
+            <div class="grand_three"></div>
+            <div class="child_son_three">
+                <div class="grand_son_three"></div>
+                <div class="grand_son_three"></div>
+                <div class="grand_son_three"></div>
+                <div class="grand_son_three"></div>
+                <div class="grand_son_three"></div>
+            </div>
+        </div>
+        <div class="child_three_two">
+            <div class="grand_two_three"></div>
+            <div class="grand_two_three"></div>
+            <div class="grand_two_three"></div>
+            <div class="grand_two_three"></div>
+            <div class="grand_two_three"></div>
+        </div>
+    </div>
+    <div class="container_four">
+        <div class="child_container_four_one">
+            <div class="grand_four_one">
+                <div class="grand__f"></div>
+                <div class="grand__f"></div>
+            </div>
+            <div class="grand_son_four">
+                <div class="grand_four_two">
+                    <div class="gr_son_one"></div>
+                    <div class="gr_son_two"></div>
+                </div>
+                <div class="grand_four_three">
+                    <div class="gr_son_tw"></div>
+                    <div class="gr_son_on"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_five">
+        <div class="grand__f"></div>
+        <div class="grand__f"></div>
+    </div>
+    <div class="container_six">
+        <div class="child_six">
+            <div class="grand_six"></div>
+            <div class="grand_six"></div>
+            <div class="grand_six"></div>
+        </div>
+    </div>
+    <div class="container_seven">
+        <div class="child_seven">
+            <div class="child_hor_one">
+                <div class="grand_sev"></div>
+                <div class="grand_sev"></div>
+                <div class="grand_sev"></div>
+                <div class="grand_sev"></div>
+                <div class="grand_sev"></div>
+            </div>
+            <div class="child_hor_two">
+                <div class="gran_sev_two"></div>
+                <div class="gran_sev_two"></div>
+                <div class="gran_sev_two"></div>
+                <div class="gran_sev_two"></div>
+            </div>
+        </div>
+        <div class="child_seven">
+            <div class="gr_sev_three">
+                <div class="gr_sev_four"></div>
+            </div>
+            <div class="gr_sev_three">
+                <div class="gr_sev_five"></div>
+            </div>
+            <div class="gr_sev_three">
+                <div class="gr_sev_six"></div>
+            </div>
+            <div class="gr_sev_three">
+                <div class="gr_sev_five"></div>
+            </div>
+            <div class="gr_sev_three">
+                <div class="gr_sev_six"></div>
+            </div>
+        </div>
+        <div class="child_seven">
+            <div class="gr_sev_three">
+                <div class="gr_sev_four"></div>
+            </div>
+            <div class="gr_sev_three">
+                <div class="gr_sev_five"></div>
+            </div>
+            <div class="gr_sev_three">
+                <div class="gr_sev_six"></div>
+            </div>
+            <div class="gr_sev_three">
+                <div class="gr_sev_five"></div>
+            </div>
+            <div class="gr_sev_three">
+                <div class="gr_sev_six"></div>
+            </div>
+    </div>
+        <div class="child_seven">
+            <div class="gr_sev_three">
+                <div class="gr_sev_four"></div>
+            </div>
+            <div class="gr_sev_three">
+                <div class="gr_sev_five"></div>
+            </div>
+            <div class="gr_sev_three">
+                <div class="gr_sev_six"></div>
+            </div>
+            <div class="gr_sev_three">
+                <div class="gr_sev_five"></div>
+            </div>
+            <div class="gr_sev_three">
+                <div class="gr_sev_six"></div>
+            </div>
+</div>
+    </div>
+</div>
+</body>
+</html>

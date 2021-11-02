@@ -3,8 +3,434 @@
 <head>
     <meta charset="UTF-8">
     <title>Additional</title>
+    <style>
+        .wrapper {
+            max-width: 1500px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        .horizontal_one {
+            height: 100px;
+            background: cornflowerblue;
+            width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            column-gap: 5px;
+        }
+
+        .horizontal_two {
+            background: dimgrey;
+            width: 1200px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+        }
+
+        .child_two_left {
+            width: 400px;
+        }
+
+        .grand_son_left {
+            background: midnightblue;
+            height: 80px;
+            width: 180px;
+            margin: 20px 50px;
+            border-radius: 5px;
+        }
+
+        .child_two_right {
+            width: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            column-gap: 5px;
+        }
+
+        .child_one, .child_two {
+            height: 20px;
+            width: 50px;
+            background: midnightblue;
+            margin-right: 50px;
+        }
+
+        .child_two {
+            width: 80px;
+            margin-right: 70px;
+        }
+
+        .horizontal_three {
+            height: 300px;
+            background: darkcyan;
+            width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .child_three {
+            height: 50px;
+            width: 250px;
+            background: midnightblue;
+            border-radius: 5px;
+        }
+
+        .horizontal_four {
+            height: 500px;
+            width: 1200px;
+            background: dimgrey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .child_four {
+            height: 400px;
+            width: 1000px;
+            background: darkslategrey;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .grand_four {
+            height: 200px;
+            width: 200px;
+            background: midnightblue;
+            border-radius: 20px;
+        }
+
+        .horizontal_five {
+            height: 300px;
+            width: 1200px;
+            background: blue;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .child_five {
+            width: 400px;
+            background: midnightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grand_five {
+            height: 200px;
+            width: 200px;
+            background: darkcyan;
+            border-radius: 50%;
+        }
+
+        .horizontal_six {
+            height: 700px;
+            width: 1200px;
+            background: dimgrey;
+        }
+
+        .text {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .child_six_one, .child_six_two {
+            height: 250px;
+            width: 800px;
+            background: grey;
+            border-radius: 20px;
+            margin-left: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border: 5px solid olivedrab;
+        }
+
+        .child_six_two {
+            margin-top: 20px;
+        }
+
+        .grand_six {
+            height: 200px;
+            width: 200px;
+            background: midnightblue;
+            border: 5px solid olivedrab;
+            border-radius: 10px;
+        }
+
+        .box {
+            height: 100px;
+            width: 150px;
+            background: black;
+            margin-left: 20PX;
+            border-radius: 10px;
+        }
+
+        .box_one {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .grand_box_left, .grand_box_right {
+            background: black;
+            margin-top: 10px;
+            height: 10px;
+            width: 80px;
+            border-radius: 10px;
+        }
+
+        .grand_box_right {
+            background: midnightblue;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .right_one, .right_two {
+            background: black;
+            height: 10px;
+            width: 30px;
+            border-radius: 10px;
+        }
+
+        .horizontal_seven {
+            background: dimgrey;
+            height: 400px;
+            width: 1200px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .child_seven_one {
+            height: 400px;
+            width: 400px;
+            background: midnightblue;
+            display: flex;
+
+        }
+
+        .child_seven_two {
+            background: darkcyan;
+            height: 400px;
+            width: 400px;
+        }
+
+        .box_seven {
+            height: 50px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .left_seven_one {
+            background: darkcyan;
+            width: 60px;
+            height: 10px;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+        .left_seven_two{
+            background: midnightblue;
+            width: 60px;
+            height: 10px;
+        }
+        .right_seven_one {
+            background: darkcyan;
+            width: 80px;
+            height: 10px;
+            border-radius: 5px;
+            margin-left: 50px;
+        }
+        .right_seven_two{
+            width: 80px;
+            height: 10px;
+            background: midnightblue;
+        }
+        .box_seven_two{
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .boxing{
+            width: 400px;
+            display: flex;
+            justify-content: center;
+        }
+        .box_seven_three{
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+            background: black;
+            display: flex;
+            justify-content: center;
+        }
+        .box_sev_two{
+            height: 100px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    </style>
 </head>
 <body>
+<div class="wrapper">
+    <div class="horizontal_one">
+        <div class="child_one"></div>
+        <div class="child_one"></div>
+        <div class="child_one"></div>
+        <div class="child_one"></div>
+    </div>
 
+    <div class="horizontal_two">
+        <div class="child_two_left">
+            <div class="grand_son_left"></div>
+        </div>
+        <div class="child_two_right">
+            <div class="child_two"></div>
+            <div class="child_two"></div>
+            <div class="child_two"></div>
+            <div class="child_two"></div>
+        </div>
+    </div>
+    <div class="horizontal_three">
+        <div class="child_three"></div>
+    </div>
+    <div class="horizontal_four">
+        <div class="child_four">
+            <div class="grand_four"></div>
+            <div class="grand_four"></div>
+            <div class="grand_four"></div>
+            <div class="grand_four"></div>
+        </div>
+    </div>
+    <div class="horizontal_five">
+        <div class="child_five">
+            <div class="grand_five"></div>
+        </div>
+        <div class="child_five">
+            <div class="grand_five"></div>
+        </div>
+        <div class="child_five">
+            <div class="grand_five"></div>
+        </div>
+    </div>
+    <div class="horizontal_six">
+        <div class="text"><h1>Service</h1></div>
+        <div class="child_six_one">
+            <div class="grand_six">
+                <div class="box"></div>
+                <div class="box_one">
+                    <div class="grand_box_left"></div>
+                    <div class="grand_box_right">
+                        <div class="right_one"></div>
+                        <div class="right_two"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grand_six">
+                <div class="box"></div>
+                <div class="box_one">
+                    <div class="grand_box_left"></div>
+                    <div class="grand_box_right">
+                        <div class="right_one"></div>
+                        <div class="right_two"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grand_six">
+                <div class="box"></div>
+                <div class="box_one">
+                    <div class="grand_box_left"></div>
+                    <div class="grand_box_right">
+                        <div class="right_one"></div>
+                        <div class="right_two"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="child_six_two">
+            <div class="grand_six">
+                <div class="box"></div>
+                <div class="box_one">
+                    <div class="grand_box_left"></div>
+                    <div class="grand_box_right">
+                        <div class="right_one"></div>
+                        <div class="right_two"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grand_six">
+                <div class="box"></div>
+                <div class="box_one">
+                    <div class="grand_box_left"></div>
+                    <div class="grand_box_right">
+                        <div class="right_one"></div>
+                        <div class="right_two"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grand_six">
+                <div class="box"></div>
+                <div class="box_one">
+                    <div class="grand_box_left"></div>
+                    <div class="grand_box_right">
+                        <div class="right_one"></div>
+                        <div class="right_two"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="horizontal_seven">
+        <div class="child_seven_one">
+            <div class="grand_seven">
+                <div class="box_seven">
+                    <div class="left_seven_one"></div>
+                    <div class="right_seven_one"></div>
+                </div>
+                <div class="box_seven_two">
+                    <div class="left_seven_one"></div>
+                    <div class="right_seven_one"></div>
+                    <div class="left_seven_one"></div>
+                    <div class="right_seven_one"></div>
+                </div>
+                <div class="box_seven_two">
+                    <div class="left_seven_one"></div>
+                    <div class="right_seven_one"></div>
+                    <div class="left_seven_one"></div>
+                    <div class="right_seven_one"></div>
+                </div>
+                <div class="boxing"><div class="box_seven_three"></div></div>
+
+            </div>
+        </div>
+        <div class="child_seven_two">
+            <div class="box_seven">
+                <div class="left_seven_two"></div>
+                <div class="right_seven_two"></div>
+            </div>
+            <div class="box_sev_two">
+                <div class="left_seven_two"></div>
+                <div class="left_seven_two"></div>
+                <div class="left_seven_two"></div>
+
+            </div>
+            <div class="box_sev_two">
+                <div class="left_seven_two"></div>
+                <div class="left_seven_two"></div>
+                <div class="left_seven_two"></div>
+
+            </div>
+            <div class="boxing"><div class="box_seven_three"></div></div>
+        </div>
+
+    </div>
+</div>
 </body>
 </html>
